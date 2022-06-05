@@ -8,4 +8,25 @@
     <div *ngIf="age <= 18; then tre; else gia;"></div>
     <ng-template #tre> <h2>Bạn còn trẻ quá!</h2> </ng-template>
     <ng-template #gia> <h2>Bạn đã già rồi!</h2> </ng-template>
+
+    <div *ngFor="let fruit of fruits; let i = index">
+        <li>{{( i + 1 )}}. {{fruit}} </li>
+    </div>
+
+    <table class="table">
+        <tr>
+            <th>Thứ tự</th>
+            <th>Tên</th>
+            <th>Giá</th>
+            <th>Hạ giá</th>
+        </tr>
+        <tr *ngFor="let fruit of fruitsObj; let i = index">
+            <td>{{ (i + 1) }}</td>
+            <td>{{ fruit.name }}</td>
+            <td>{{ fruit.price }}</td>
+            <td>
+                <span *ngIf="fruit.sale"> Đang hạ giá </span>
+            </td>
+        </tr>
+    </table>
 </div>
