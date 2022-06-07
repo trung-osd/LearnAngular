@@ -7,12 +7,14 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 
 import { FormsModule } from '@angular/forms';
+import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    TemplateDrivenFormComponent
   ],
   imports: [
     BrowserModule,
