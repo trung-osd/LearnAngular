@@ -10,6 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { GetDataComponent } from './get-data/get-data.component';
+import { PostDataComponent } from './post-data/post-data.component';
 
 
 
@@ -21,7 +22,8 @@ import { GetDataComponent } from './get-data/get-data.component';
     AboutComponent,
     TemplateDrivenFormComponent,
     ReactiveFormComponent,
-    GetDataComponent
+    GetDataComponent,
+    PostDataComponent
   ],
   imports: [
     BrowserModule,
